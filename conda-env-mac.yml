@@ -1,16 +1,11 @@
+# conda env remove -n tensorflow
 # conda env create -f conda-env-mac.yml -n tensorflow
 
 name: tensorflow
  
 dependencies:
-    - python=3.9
-    - pip
+    - python=3.8
     - apple::tensorflow-deps==2.5.0
-    - scikit-learn
-    - scipy
-    - pandas
-    - pandas-datareader
-    - matplotlib
     - pip:
         - tensorflow-macos==2.5.0
         - tensorflow-metal==0.1.2
